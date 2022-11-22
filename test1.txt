@@ -1,16 +1,25 @@
- Volume in drive F is Personal
- Volume Serial Number is 644E-7C79
-
- Directory of F:\Users\ISHGLO-ONE\DEVOPS\MyGitProj
-
-10/18/2022  08:16 PM    <DIR>          .
-10/18/2022  08:16 PM    <DIR>          ..
-10/18/2022  08:16 PM                 0 test1.txt
-               1 File(s)              0 bytes
-               2 Dir(s)  223,326,154,752 bytes free
-
-
-
-DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 test-modified file
+
+#!/bin/bash
+#the script is to find out where engineers will love to work
+echo "what is your name "
+read name
+echo "Are you a man or woman"
+read answer
+if [[ $answer == "woman" ]]
+then
+MS=Miss
+echo $MS $name
+else
+MS=Mr
+echo $MS $name
+fi
+echo "what is your qualification "
+read qualification
+echo wow $qualification
+echo "which country would you like to work ?"
+read country
+echo $country is a beautiful country
+echo "congratulations engineer $MS $name"
+
